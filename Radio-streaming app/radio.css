@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa+One&family=Delicious+Handrawn&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding:0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+   background-color: #ECF9FF; 
+}
+h1{
+    line-height: 100px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 45px;
+    font-family: 'Changa One', cursive;
+}
+.content p{
+    font-size: 25px;
+}
+.flex{
+    line-height: 40px;
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+img{
+    width:250px;
+    height:auto;
+}
+
+
+.flex button{
+    display: flex;
+    font-size: 15px;
+    border-radius: 5px;
+    background-color: #B9F3FC;
+    border: none;
+    width:150px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
