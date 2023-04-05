@@ -175,3 +175,24 @@ function hasEmptyTile() {
     }
     return false;
 }
+
+function slide(row) {
+    //[0, 2, 2, 2] 
+    row = filterZero(row); //[2, 2, 2]
+    for (let i = 0; i < row.length-1; i++){
+        if (row[i] == row[i+1]) {
+            row[i] *= 2;
+            if (row[i] == 2048) {
+                alert("Congratulations! You've reached 2048!");
+            }
+            row[i+1] = 0;
+            score += row[i];
+        }
+    } //[4, 0, 2]
+    row = filterZero(row); //[4, 2]
+    //add zeroes
+    while (row.length < columns) {
+        row.push(0);
+    } //[4, 2, 0, 0]
+    return row;
+}
