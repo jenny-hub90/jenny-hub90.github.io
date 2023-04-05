@@ -14,6 +14,7 @@ h1{
     text-align: center;
     font-size: 35px;
     text-transform: uppercase;
+    text-shadow: 3px 3px #AA77FF;
 }
 
 .card{
@@ -93,7 +94,7 @@ h1{
 .popup.hide{
     display: none;
 }
-
+  
 @media (max-width:468px){
     
 .card{

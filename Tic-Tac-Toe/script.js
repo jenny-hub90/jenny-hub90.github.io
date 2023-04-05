@@ -43,6 +43,16 @@ const winFunction = (varter) => {
   } else {
     messageRef.innerHTML = "&#x1F389; <br> 'O' Wins";
   }
+  // Add cut animation to winning buttons
+  for (var i of winningPattern) {
+    if (
+      ButtonRef[i[0]].innerText == varter &&
+      ButtonRef[i[1]].innerText == varter &&
+      ButtonRef[i[2]].innerText == varter
+    ) {
+      i.forEach((j) => ButtonRef[j].classList.add("cut-animation"));
+    }
+  }
 };
 
 //Function for draw
@@ -89,11 +99,15 @@ ButtonRef.forEach((element) => {
       //Display X
       element.innerText = "X";
       element.disabled = true;
+      //Alert message after X's turn
+      window.alert("It's O's turn now!");
     } else {
       xTurn = true;
       //Display Y
       element.innerText = "O";
       element.disabled = true;
+      //Alert message after O's turn
+      window.alert("It's X's turn now!");
     }
     //Increment count on each click
     count += 1;
