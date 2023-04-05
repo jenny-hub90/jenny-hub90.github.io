@@ -100,44 +100,16 @@ h2{
     background-color: #F9CF93;
 }
 
-
-
-/*
-
-body{
-    
-}
-h1{
-   
-}
-
-h2{
-    
-}
-
-.card{
-    position: absolute;
-    top:16%;
-    left:35%;
-}
-
-.box{
-    width:70vmin;
-    height: 70vmin;
-    display: flex;
-    flex-wrap: wrap;
-    gap:1vmin;
-}
-.btn{
-    background-color:#FAF7F0;
-    height: 15vmin;
-    width: 16vmin;
-    border: none;
+#restart{
+    font-size: 1.3em;
+    border:none;
+    width:100px;
+    padding:0.5em;
+    display: block;
+    margin:1.5em auto 0 auto;
     border-radius: 10px;
+    position: relative;
+    display: block;
+    background-color: #F7A440;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-    font-size: 12vmin;
 }
-.btn:hover {
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-}
- */
