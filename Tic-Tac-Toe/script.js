@@ -100,14 +100,15 @@ ButtonRef.forEach((element) => {
       element.innerText = "X";
       element.disabled = true;
       //Alert message after X's turn
-      window.alert("It's O's turn now!");
+      window.alert("It's X's turn now!");
+      
     } else {
       xTurn = true;
       //Display Y
       element.innerText = "O";
       element.disabled = true;
       //Alert message after O's turn
-      window.alert("It's X's turn now!");
+      window.alert("It's O's turn now!");
     }
     //Increment count on each click
     count += 1;
