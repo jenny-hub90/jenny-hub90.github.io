@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+}
+
+body{
+    background-image: linear-gradient(to left,#ECF2FF,#E3DFFD,#E5D1FA 50%);
+}
+
+h1{
+    text-align: center;
+    font-size: 35px;
+    text-transform: uppercase;
+}
+
+.card{
+    position: absolute;
+    top:16%;
+    left:35%;
+}
+
+.box{
+    width:70vmin;
+    height: 70vmin;
+    display: flex;
+    flex-wrap: wrap;
+    gap:2vmin;
+}
+.btn{
+    background-color: #ECF2FF;
+    height: 22vmin;
+    width: 22vmin;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    font-size: 12vmin;
+    color: #B2A4FF;
+}
+.btn:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+#restart{
+    font-size: 1.3em;
+    border:none;
+    width:100px;
+    padding:1em;
+    display: block;
+    margin:1.5em auto 0 auto;
+    border-radius: 10px;
+    position: relative;
+    display: block;
+    background-color: #E3DFFD;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+#restart:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.popup{
+    background-image: linear-gradient(to left,#ECF2FF,#E3DFFD,#E5D1FA 50%);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    z-index: 2;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1em;
+    font-size: 10vmin;
+}
+
+#new{
+    font-size: 20px;
+    border:none;
+    padding: 0.5em 1em;
+    display: block;
+    border-radius: 5px;
+    background-color: #E3DFFD;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+#message{
+    font-size: 35px;
+    text-align: center;
+}
+
+.popup.hide{
+    display: none;
+}
+
+@media (max-width:468px){
+    
+.card{
+    position: absolute;
+    top:16%;
+    left:15%;
+}
+
+}
+
+@media (min-width:467px) and (max-width:1023px){
+    .card{
+        position: absolute;
+        top:16%;
+        left:15%;
+    } 
+}
